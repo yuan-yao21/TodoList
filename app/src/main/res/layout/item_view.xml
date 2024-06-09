@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/material_dynamic_neutral99"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="6dp"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.circularreveal.CircularRevealLinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- 类别栏 -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/category_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="类别"
+                android:textSize="9sp"
+                android:textColor="@color/gray"
+                android:layout_marginBottom="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                tools:ignore="SmallSp" />
+
+            <!-- 标题栏 -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/title_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="标题"
+                android:textSize="9sp"
+                android:textColor="@color/gray"
+                android:layout_marginBottom="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                tools:ignore="SmallSp" />
+
+            <!-- 文本内容栏 -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/content_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="文本内容"
+                android:textSize="9sp"
+                android:textColor="@color/gray"
+                android:layout_marginBottom="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                tools:ignore="SmallSp" />
+
+            <!-- 更新时间栏 -->
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/update_time_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="更新时间"
+                android:textSize="9sp"
+                android:textColor="@color/gray"
+                android:layout_marginBottom="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                tools:ignore="SmallSp" />
+
+        </com.google.android.material.circularreveal.CircularRevealLinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
